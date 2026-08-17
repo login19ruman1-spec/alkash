@@ -1,0 +1,123 @@
+# Consumables configuration
+# Effect names are Bukkit/Paper PotionEffectType names.
+# Particle names are Bukkit Particle names.
+
+items:
+  alcohol:
+    beer:
+      material: POTION
+      name: "&eПиво"
+      lore:
+        - "&7Освежающий напиток"
+        - ""
+        - "&fЭффекты:"
+        - "&aСкорость I &7на 20 сек."
+        - "&cТошнота I &7на 8 сек."
+      effects:
+        - "SPEED:1:20"
+        - "CONFUSION:1:8"
+      particles:
+        - "CLOUD:12:0.35:0.25:0.35"
+      sound: "ENTITY_GENERIC_DRINK"
+
+    wine:
+      material: POTION
+      name: "&dВино"
+      lore:
+        - "&7Сладкий напиток"
+        - ""
+        - "&fЭффекты:"
+        - "&dНасыщение I &7на 15 сек."
+        - "&cЗамедление I &7на 10 сек."
+      effects:
+        - "SATURATION:1:15"
+        - "SLOWNESS:1:10"
+      particles:
+        - "SPELL:18:0.4:0.5:0.4"
+      sound: "ENTITY_GENERIC_DRINK"
+
+    whisky:
+      material: POTION
+      name: "&6Виски"
+      lore:
+        - "&7Крепкий напиток"
+        - ""
+        - "&fЭффекты:"
+        - "&6Сила II &7на 15 сек."
+        - "&cТошнота II &7на 12 сек."
+      effects:
+        - "STRENGTH:2:15"
+        - "CONFUSION:2:12"
+      particles:
+        - "FLAME:15:0.25:0.4:0.25"
+      sound: "ENTITY_GENERIC_DRINK"
+
+  vitamins:
+    vitamin_a:
+      material: GOLD_NUGGET
+      name: "&eВитамин A"
+      lore:
+        - "&7Полезная витаминка"
+        - ""
+        - "&fЭффекты:"
+        - "&eНочное зрение &7на 60 сек."
+      effects:
+        - "NIGHT_VISION:1:60"
+      particles:
+        - "HAPPY_VILLAGER:12:0.3:0.4:0.3"
+      sound: "ENTITY_PLAYER_BURP"
+
+    vitamin_c:
+      material: GOLD_NUGGET
+      name: "&6Витамин C"
+      lore:
+        - "&7Поддерживает организм"
+        - ""
+        - "&fЭффекты:"
+        - "&cСопротивление &7на 30 сек."
+        - "&aРегенерация &7на 8 сек."
+      effects:
+        - "RESISTANCE:1:30"
+        - "REGENERATION:1:8"
+      particles:
+        - "HEART:4:0.35:0.5:0.35"
+      sound: "ENTITY_PLAYER_BURP"
+
+  smoking:
+    cigarette:
+      material: PAPER
+      name: "&fСигарета"
+      lore:
+        - "&7Не рекомендуется для здоровья"
+        - ""
+        - "&fЭффекты:"
+        - "&7Ночное зрение &7на 20 сек."
+        - "&cТошнота &7на 5 сек."
+      effects:
+        - "NIGHT_VISION:1:20"
+        - "CONFUSION:1:5"
+      particles:
+        - "CAMPFIRE_COSY_SMOKE:20:0.25:0.6:0.25"
+        - "SMOKE:8:0.2:0.5:0.2"
+      sound: "BLOCK_FIRE_AMBIENT"
+
+    cigar:
+      material: PAPER
+      name: "&6Сигара"
+      lore:
+        - "&7Крепкий табак"
+        - ""
+        - "&fЭффекты:"
+        - "&aСила I &7на 12 сек."
+        - "&cЗамедление I &7на 8 сек."
+      effects:
+        - "STRENGTH:1:12"
+        - "SLOWNESS:1:8"
+      particles:
+        - "CAMPFIRE_COSY_SMOKE:30:0.3:0.8:0.3"
+      sound: "BLOCK_FIRE_AMBIENT"
+
+gui:
+  title: "&8Расходники"
+  player-title: "&8Выберите игрока"
+  item-title: "&8Выберите предмет"

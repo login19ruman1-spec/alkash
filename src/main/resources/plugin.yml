@@ -1,0 +1,17 @@
+name: Consumables
+version: 1.0.0
+main: ru.example.consumables.ConsumablesPlugin
+api-version: '1.21'
+author: YourName
+description: Custom alcohol, vitamins and smoking consumables with effects.
+
+commands:
+  consumables:
+    description: Consumables administration command
+    usage: /consumables <menu|give|reload>
+    aliases: [cons]
+
+permissions:
+  consumables.admin:
+    description: Access to the Consumables admin panel
+    default: op
